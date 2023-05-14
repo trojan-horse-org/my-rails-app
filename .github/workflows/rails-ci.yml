@@ -16,11 +16,6 @@ jobs:
 
     - name: Set up Ruby
       uses: actions/setup-ruby@v1
-
-    - name: Install dependencies
-      run: |
-        gem install bundler
-        bundle install
-
+      
     - name: Run tests
       run: bundle exec rails test
